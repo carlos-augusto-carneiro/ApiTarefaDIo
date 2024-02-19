@@ -1,6 +1,15 @@
+using ApiTarefasDio.Persistences.DB;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AgendaDb>( options => 
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("MySql"), 
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("MySql"))
+        )
+        );
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

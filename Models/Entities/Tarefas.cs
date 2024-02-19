@@ -4,7 +4,7 @@ using ApiTarefasDio.Models.Enums;
 
 namespace ApiTarefasDio.Models.Entities;
 
-public class ApiTarefasDio
+public class Tarefas
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
