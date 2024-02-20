@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ApiTarefasDio.Models.Enums;
+using static ApiTarefasDio.Models.Enums.Enumeracao;
 
 namespace ApiTarefasDio.Models.Entities;
 

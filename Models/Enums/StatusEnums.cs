@@ -1,7 +1,10 @@
 namespace ApiTarefasDio.Models.Enums;
 
-public enum StatusEnums
+public class Enumeracao
 {
-    CONCLUIDO,
-    PENDENTE
+    public enum StatusEnums
+    {
+        CONCLUIDO = 2,
+        PENDENTE = 1
+    }
 }
